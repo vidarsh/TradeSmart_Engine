@@ -1,0 +1,22 @@
+[package]
+name = "trading-bot"
+version = "0.1.0"
+description = "A command line trading bot for binance"
+repository = "https://github.com/AnshulKanwar/trading-bot"
+edition = "2021"
+authors = ["Anshul Kanwar <me@anshulkanwar.tech>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.12", features = ["json", "blocking"] }
+serde = { version = "1.0.147", features = ["derive"] }
+serde_json = "1.0.87"
+chrono = "0.4.22"
+clap = { version = "4.0.18", features = ["derive"] }
+dotenv = "0.15.0"
+sha2 = "0.10.6"
+hmac = "0.12.1"
+hex = "0.4.3"
+log = "0.4.17"
+env_logger = "0.9.1"
